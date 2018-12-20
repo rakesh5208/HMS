@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0px;
+}
+
+.view{
+    width: 100%;
+    .heading{
+        text-align: center;
+        background: #efefef;
+        padding:14px 0px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .control-btn{
+        margin: 7px 0px;
+    }
+}
+
+.btn{
+    padding:8px;
+    border-radius: 5px;
+    border:1px solid white;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.btn:focus{
+    outline: none;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    & thead{
+        & tr{
+            // border-bottom:1px solid #efefef;
+            box-shadow: 0px 2px 0px #efefef;
+        }
+        
+    }
+    & td, th{
+        padding:10px ;
+        border-top: 1px solid #efefef;
+        width:33%;
+        text-align: left;
+    }
+}
+.btn-green{
+    color:white;
+    background: #4CAF50;
+
+}
+a{
+    color:#29B6F6;
+}

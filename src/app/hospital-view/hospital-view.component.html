@@ -1,0 +1,26 @@
+<div class="view">
+    <div class="heading">
+      <header>Hospital List</header>
+    </div>
+    <div class="control-btn">
+      <button class="btn btn-green" (click)="sortBy('hospitalname')">Sort By Hospital Name</button>
+    </div>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th *ngFor="let th of tableHeaders">{{th}}</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let hosp of hospitals">
+              <td>{{hosp.hospitalname}} </td>
+              <td> {{hosp.contactnumber}}</td>
+              <td>
+                  <a routerLink="/departments" [queryParams]="{hospitalname: hosp.hospitalname}" >View</a> 
+              </td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
